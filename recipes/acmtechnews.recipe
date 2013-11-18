@@ -9,6 +9,7 @@ class ACMTechNewsRecipe(BasicNewsRecipe):
     use_embedded_content = True
     needs_subscription = False
     language = 'en'
+    publisher = u'ACM'
     __author__ = 'chrisharding'
     no_stylesheets        = True
 
