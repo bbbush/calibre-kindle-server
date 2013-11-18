@@ -1,4 +1,4 @@
-# vim: set ai expandtab sw=4 filetype=python:
+# vim: set ai et ts=4 sw=4 filetype=python:
 
 import datetime
 import time
@@ -12,6 +12,7 @@ class ACMTechNewsRecipe(BasicNewsRecipe):
     use_embedded_content = True
     needs_subscription = False
     no_stylesheets = True
+    recursions = 1
     language = 'en'
     publisher = u'ACM'
     __author__ = 'chrisharding'
