@@ -5,7 +5,7 @@ import time
 from calibre.web.feeds.news import BasicNewsRecipe
 
 class ACMTechNewsRecipe(BasicNewsRecipe):
-    title = "ACM TechNews - " + time.strftime( '%a' )
+    title = "ACM TechNews"
     oldest_article = 1
     max_articles_per_feed = 20
     auto_cleanup = True
