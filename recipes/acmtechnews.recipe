@@ -1,3 +1,5 @@
+# vim: set ai expandtab sw=4 filetype=python:
+
 import datetime
 import time
 from calibre.web.feeds.news import BasicNewsRecipe
@@ -6,13 +8,13 @@ class ACMTechNewsRecipe(BasicNewsRecipe):
     title = "ACM TechNews - " + time.strftime( '%a' )
     oldest_article = 1
     max_articles_per_feed = 20
+    auto_cleanup = True
     use_embedded_content = True
     needs_subscription = False
+    no_stylesheets = True
     language = 'en'
     publisher = u'ACM'
     __author__ = 'chrisharding'
-    no_stylesheets        = True
-
 
     # from Feedly
     feeds = [#(u'TechNews', u'http://rss.acm.org/technews/TechNews.rss'),
