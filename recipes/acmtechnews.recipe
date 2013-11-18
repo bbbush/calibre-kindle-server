@@ -8,9 +8,11 @@ class ACMTechNewsRecipe(BasicNewsRecipe):
     max_articles_per_feed = 20
     use_embedded_content = True
     needs_subscription = False
-    feeds          = [(u'TechNews', u'http://rss.acm.org/technews/TechNews.rss')]
     language = 'en'
     __author__ = 'chrisharding'
     no_stylesheets        = True
 
 
+    # from Feedly
+    feeds = [#(u'TechNews', u'http://rss.acm.org/technews/TechNews.rss'),
+            (u'TechNews', u'http://www.infoinc.com/acm/TechNews.rss')]
