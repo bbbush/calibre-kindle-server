@@ -14,12 +14,3 @@ class ACMTechNewsRecipe(BasicNewsRecipe):
     no_stylesheets        = True
 
 
-    def get_browser(self):
-        br = BasicNewsRecipe.get_browser()
-        if self.username is not None and self.password is not None :
-            br.open('https://cacm.acm.org/login')
-            br.select_form(nr=1)
-            br['current_member[user]']   = self.username
-            br['current_member[passwd]'] = self.password
-            br.submit()
-        return br
